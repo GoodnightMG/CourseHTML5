@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en' ng-app=shell>
+
+<head>
+	<title>Web Course</title>
+	<script src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
+	<script src='scripts/vendor/angular.min.js'></script>
+	<script src='scripts/ang-core.js'></script>
+	<link rel='stylesheet' href='styles/styles.css'></link>
+</head>
+
+<body>
+
+<main>
+	<section>
+		<div class='menu' ng-controller=moduleMenu>
+			<ul>
+				<li ng-repeat='(key,value) in modules'>
+				<h1 menu-item></h1>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div id='stage' ng-controller=stage>
+		</div>
+
+		<div class='controls' ng-controller=controlBar>
+			<div module-title></div>
+			<div scene-title></div>
+
+			<div next-btn></div>
+			<div progress-tracker></div>
+			<div previous-btn></div>
+			
+			<div audio-btn></div>
+			<div play-btn></div>
+			<div restart-btn></div>
+		</div>
+	</section>
+</main>
+
+</body>
+
+</html>

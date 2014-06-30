@@ -1,0 +1,46 @@
+*{
+	padding:0;
+	margin:0;
+	font:15px 'arial';
+}
+h1{
+	font: bold 14px 'arial';
+}
+.controls{
+	width:800px;
+	border:dashed #222222 1px;
+	padding:10px;
+}
+.controls div{
+	position:relative;
+	display:inline-block;
+	padding:10px;
+	background:#8A9CE3;
+	-webkit-transition: background .3s;
+	transition: background .3s;
+	
+	cursor:pointer;
+}
+.controls div:hover{
+	background:#415ED1;
+}
+#stage{
+	border:dashed #222222 1px;
+	width:800px;
+	height:400px;
+	padding:10px;
+}
+
+main{
+	width:1200px;
+	height:600px;
+	overflow:hidden;
+}
+
+section{
+	float:left;
+	width:auto;
+}
+.menu{
+	width:200px;
+}
